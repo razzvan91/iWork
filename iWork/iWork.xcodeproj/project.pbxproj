@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000830E32FA45F5D03BB0658 /* Pods_iWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36944038317E32137953A715 /* Pods_iWork.framework */; };
+		F908EC3820C6F4BE00D7EE04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F908EC3720C6F4BE00D7EE04 /* AppDelegate.swift */; };
+		F908EC3A20C6F4BE00D7EE04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F908EC3920C6F4BE00D7EE04 /* ViewController.swift */; };
+		F908EC3D20C6F4BE00D7EE04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F908EC3B20C6F4BE00D7EE04 /* Main.storyboard */; };
+		F908EC3F20C6F4C200D7EE04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F908EC3E20C6F4C200D7EE04 /* Assets.xcassets */; };
+		F908EC4220C6F4C200D7EE04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F908EC4020C6F4C200D7EE04 /* LaunchScreen.storyboard */; };
+		F908EC4C20C6F72200D7EE04 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F908EC4B20C6F72200D7EE04 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		117CC4758661500A45E20A40 /* Pods-iWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iWork.release.xcconfig"; path = "Pods/Target Support Files/Pods-iWork/Pods-iWork.release.xcconfig"; sourceTree = "<group>"; };
+		36944038317E32137953A715 /* Pods_iWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6C5A4393508BD327D63CB42 /* Pods-iWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iWork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iWork/Pods-iWork.debug.xcconfig"; sourceTree = "<group>"; };
+		F908EC3420C6F4BE00D7EE04 /* iWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F908EC3720C6F4BE00D7EE04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F908EC3920C6F4BE00D7EE04 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F908EC3C20C6F4BE00D7EE04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F908EC3E20C6F4C200D7EE04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F908EC4120C6F4C200D7EE04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F908EC4320C6F4C200D7EE04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F908EC4B20C6F72200D7EE04 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F908EC3120C6F4BE00D7EE04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000830E32FA45F5D03BB0658 /* Pods_iWork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A79AD192484EB8BB7AAA4E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				36944038317E32137953A715 /* Pods_iWork.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEE0A175277218E8E80886FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B6C5A4393508BD327D63CB42 /* Pods-iWork.debug.xcconfig */,
+				117CC4758661500A45E20A40 /* Pods-iWork.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F908EC2B20C6F4BE00D7EE04 = {
+			isa = PBXGroup;
+			children = (
+				F908EC3620C6F4BE00D7EE04 /* iWork */,
+				F908EC3520C6F4BE00D7EE04 /* Products */,
+				CEE0A175277218E8E80886FB /* Pods */,
+				5A79AD192484EB8BB7AAA4E0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F908EC3520C6F4BE00D7EE04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F908EC3420C6F4BE00D7EE04 /* iWork.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F908EC3620C6F4BE00D7EE04 /* iWork */ = {
+			isa = PBXGroup;
+			children = (
+				F908EC3720C6F4BE00D7EE04 /* AppDelegate.swift */,
+				F908EC4920C6F4EC00D7EE04 /* ViewControllers */,
+				F908EC4A20C6F4FE00D7EE04 /* Storyboards */,
+				F908EC3E20C6F4C200D7EE04 /* Assets.xcassets */,
+				F908EC4320C6F4C200D7EE04 /* Info.plist */,
+				F908EC4B20C6F72200D7EE04 /* GoogleService-Info.plist */,
+			);
+			path = iWork;
+			sourceTree = "<group>";
+		};
+		F908EC4920C6F4EC00D7EE04 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F908EC3920C6F4BE00D7EE04 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F908EC4A20C6F4FE00D7EE04 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F908EC4020C6F4C200D7EE04 /* LaunchScreen.storyboard */,
+				F908EC3B20C6F4BE00D7EE04 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F908EC3320C6F4BE00D7EE04 /* iWork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F908EC4620C6F4C200D7EE04 /* Build configuration list for PBXNativeTarget "iWork" */;
+			buildPhases = (
+				E6DA235C10DFE633F6432F3D /* [CP] Check Pods Manifest.lock */,
+				F908EC3020C6F4BE00D7EE04 /* Sources */,
+				F908EC3120C6F4BE00D7EE04 /* Frameworks */,
+				F908EC3220C6F4BE00D7EE04 /* Resources */,
+				2722B189B0E9DC1FC2395682 /* [CP] Embed Pods Frameworks */,
+				B7DE2927AAF30D38DA8D4CB8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iWork;
+			productName = iWork;
+			productReference = F908EC3420C6F4BE00D7EE04 /* iWork.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F908EC2C20C6F4BE00D7EE04 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Razvan;
+				TargetAttributes = {
+					F908EC3320C6F4BE00D7EE04 = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+				};
+			};
+			buildConfigurationList = F908EC2F20C6F4BE00D7EE04 /* Build configuration list for PBXProject "iWork" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F908EC2B20C6F4BE00D7EE04;
+			productRefGroup = F908EC3520C6F4BE00D7EE04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F908EC3320C6F4BE00D7EE04 /* iWork */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F908EC3220C6F4BE00D7EE04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F908EC4220C6F4C200D7EE04 /* LaunchScreen.storyboard in Resources */,
+				F908EC4C20C6F72200D7EE04 /* GoogleService-Info.plist in Resources */,
+				F908EC3F20C6F4C200D7EE04 /* Assets.xcassets in Resources */,
+				F908EC3D20C6F4BE00D7EE04 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2722B189B0E9DC1FC2395682 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iWork/Pods-iWork-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iWork/Pods-iWork-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7DE2927AAF30D38DA8D4CB8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iWork/Pods-iWork-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6DA235C10DFE633F6432F3D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iWork-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F908EC3020C6F4BE00D7EE04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F908EC3A20C6F4BE00D7EE04 /* ViewController.swift in Sources */,
+				F908EC3820C6F4BE00D7EE04 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F908EC3B20C6F4BE00D7EE04 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F908EC3C20C6F4BE00D7EE04 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F908EC4020C6F4C200D7EE04 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F908EC4120C6F4C200D7EE04 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F908EC4420C6F4C200D7EE04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F908EC4520C6F4C200D7EE04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F908EC4720C6F4C200D7EE04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6C5A4393508BD327D63CB42 /* Pods-iWork.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZJ3NS3BVG6;
+				INFOPLIST_FILE = iWork/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.razz.iWork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F908EC4820C6F4C200D7EE04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 117CC4758661500A45E20A40 /* Pods-iWork.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZJ3NS3BVG6;
+				INFOPLIST_FILE = iWork/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.razz.iWork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F908EC2F20C6F4BE00D7EE04 /* Build configuration list for PBXProject "iWork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F908EC4420C6F4C200D7EE04 /* Debug */,
+				F908EC4520C6F4C200D7EE04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F908EC4620C6F4C200D7EE04 /* Build configuration list for PBXNativeTarget "iWork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F908EC4720C6F4C200D7EE04 /* Debug */,
+				F908EC4820C6F4C200D7EE04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F908EC2C20C6F4BE00D7EE04 /* Project object */;
+}
