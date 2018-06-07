@@ -1,2 +1,10 @@
 Pods/
 Podfile.lock
+iWork.xcworkspace/
+.idea/iWork.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml
+.idea/xcode.xml
+.idea/codeStyles/Project.xml
