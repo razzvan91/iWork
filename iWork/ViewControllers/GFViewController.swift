@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  GFViewController.swift
 //  iWork
 //
 //  Created by Razvan Armeanu on 05/06/2018.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class GFViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

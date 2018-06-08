@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		000830E32FA45F5D03BB0658 /* Pods_iWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36944038317E32137953A715 /* Pods_iWork.framework */; };
 		F908EC3820C6F4BE00D7EE04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F908EC3720C6F4BE00D7EE04 /* AppDelegate.swift */; };
-		F908EC3A20C6F4BE00D7EE04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F908EC3920C6F4BE00D7EE04 /* ViewController.swift */; };
-		F908EC3D20C6F4BE00D7EE04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F908EC3B20C6F4BE00D7EE04 /* Main.storyboard */; };
+		F908EC3A20C6F4BE00D7EE04 /* GFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F908EC3920C6F4BE00D7EE04 /* GFViewController.swift */; };
+		F908EC3D20C6F4BE00D7EE04 /* GFMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F908EC3B20C6F4BE00D7EE04 /* GFMain.storyboard */; };
 		F908EC3F20C6F4C200D7EE04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F908EC3E20C6F4C200D7EE04 /* Assets.xcassets */; };
-		F908EC4220C6F4C200D7EE04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F908EC4020C6F4C200D7EE04 /* LaunchScreen.storyboard */; };
+		F908EC4220C6F4C200D7EE04 /* GFLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F908EC4020C6F4C200D7EE04 /* GFLaunchScreen.storyboard */; };
 		F908EC4C20C6F72200D7EE04 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F908EC4B20C6F72200D7EE04 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -22,10 +22,10 @@
 		B6C5A4393508BD327D63CB42 /* Pods-iWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iWork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iWork/Pods-iWork.debug.xcconfig"; sourceTree = "<group>"; };
 		F908EC3420C6F4BE00D7EE04 /* iWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F908EC3720C6F4BE00D7EE04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F908EC3920C6F4BE00D7EE04 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F908EC3C20C6F4BE00D7EE04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F908EC3920C6F4BE00D7EE04 /* GFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFViewController.swift; sourceTree = "<group>"; };
+		F908EC3C20C6F4BE00D7EE04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/GFMain.storyboard; sourceTree = "<group>"; };
 		F908EC3E20C6F4C200D7EE04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F908EC4120C6F4C200D7EE04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F908EC4120C6F4C200D7EE04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/GFLaunchScreen.storyboard; sourceTree = "<group>"; };
 		F908EC4320C6F4C200D7EE04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F908EC4B20C6F72200D7EE04 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,7 +93,7 @@
 		F908EC4920C6F4EC00D7EE04 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				F908EC3920C6F4BE00D7EE04 /* ViewController.swift */,
+				F908EC3920C6F4BE00D7EE04 /* GFViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -101,8 +101,8 @@
 		F908EC4A20C6F4FE00D7EE04 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				F908EC4020C6F4C200D7EE04 /* LaunchScreen.storyboard */,
-				F908EC3B20C6F4BE00D7EE04 /* Main.storyboard */,
+				F908EC4020C6F4C200D7EE04 /* GFLaunchScreen.storyboard */,
+				F908EC3B20C6F4BE00D7EE04 /* GFMain.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -136,6 +136,7 @@
 		F908EC2C20C6F4BE00D7EE04 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = GF;
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = Razvan;
@@ -168,10 +169,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F908EC4220C6F4C200D7EE04 /* LaunchScreen.storyboard in Resources */,
+				F908EC4220C6F4C200D7EE04 /* GFLaunchScreen.storyboard in Resources */,
 				F908EC4C20C6F72200D7EE04 /* GoogleService-Info.plist in Resources */,
 				F908EC3F20C6F4C200D7EE04 /* Assets.xcassets in Resources */,
-				F908EC3D20C6F4BE00D7EE04 /* Main.storyboard in Resources */,
+				F908EC3D20C6F4BE00D7EE04 /* GFMain.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F908EC3A20C6F4BE00D7EE04 /* ViewController.swift in Sources */,
+				F908EC3A20C6F4BE00D7EE04 /* GFViewController.swift in Sources */,
 				F908EC3820C6F4BE00D7EE04 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,20 +249,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F908EC3B20C6F4BE00D7EE04 /* Main.storyboard */ = {
+		F908EC3B20C6F4BE00D7EE04 /* GFMain.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F908EC3C20C6F4BE00D7EE04 /* Base */,
 			);
-			name = Main.storyboard;
+			name = GFMain.storyboard;
 			sourceTree = "<group>";
 		};
-		F908EC4020C6F4C200D7EE04 /* LaunchScreen.storyboard */ = {
+		F908EC4020C6F4C200D7EE04 /* GFLaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F908EC4120C6F4C200D7EE04 /* Base */,
 			);
-			name = LaunchScreen.storyboard;
+			name = GFLaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
