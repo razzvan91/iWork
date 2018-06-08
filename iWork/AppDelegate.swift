@@ -8,16 +8,15 @@
 
 import UIKit
 import Firebase
-import ILLoginKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var loginCoordinator: LoginCoordinator?
+    var loginCoordinator: GFLoginCoordinator?
 
-    func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        loginCoordinator = LoginCoordinator(window: window!)
+    func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+        loginCoordinator = GFLoginCoordinator(window: window!)
         return true
     }
 

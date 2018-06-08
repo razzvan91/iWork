@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		000830E32FA45F5D03BB0658 /* Pods_iWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36944038317E32137953A715 /* Pods_iWork.framework */; };
+		BF3D576D20CA984300839F1D /* GFLoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D576C20CA984300839F1D /* GFLoginCoordinator.swift */; };
 		F908EC3820C6F4BE00D7EE04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F908EC3720C6F4BE00D7EE04 /* AppDelegate.swift */; };
 		F908EC3A20C6F4BE00D7EE04 /* GFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F908EC3920C6F4BE00D7EE04 /* GFViewController.swift */; };
 		F908EC3D20C6F4BE00D7EE04 /* GFMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F908EC3B20C6F4BE00D7EE04 /* GFMain.storyboard */; };
@@ -20,6 +21,7 @@
 		117CC4758661500A45E20A40 /* Pods-iWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iWork.release.xcconfig"; path = "Pods/Target Support Files/Pods-iWork/Pods-iWork.release.xcconfig"; sourceTree = "<group>"; };
 		36944038317E32137953A715 /* Pods_iWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6C5A4393508BD327D63CB42 /* Pods-iWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iWork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iWork/Pods-iWork.debug.xcconfig"; sourceTree = "<group>"; };
+		BF3D576C20CA984300839F1D /* GFLoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFLoginCoordinator.swift; sourceTree = "<group>"; };
 		F908EC3420C6F4BE00D7EE04 /* iWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F908EC3720C6F4BE00D7EE04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F908EC3920C6F4BE00D7EE04 /* GFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +50,14 @@
 				36944038317E32137953A715 /* Pods_iWork.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF3D576B20CA97F700839F1D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BF3D576C20CA984300839F1D /* GFLoginCoordinator.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		CEE0A175277218E8E80886FB /* Pods */ = {
@@ -80,6 +90,7 @@
 		F908EC3620C6F4BE00D7EE04 /* iWork */ = {
 			isa = PBXGroup;
 			children = (
+				BF3D576B20CA97F700839F1D /* Controllers */,
 				F908EC3720C6F4BE00D7EE04 /* AppDelegate.swift */,
 				F908EC4920C6F4EC00D7EE04 /* ViewControllers */,
 				F908EC4A20C6F4FE00D7EE04 /* Storyboards */,
@@ -185,24 +196,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-iWork/Pods-iWork-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/ILLoginKit/ILLoginKit.framework",
-				"${BUILT_PRODUCTS_DIR}/Validator/Validator.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ILLoginKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Validator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,6 +238,7 @@
 			files = (
 				F908EC3A20C6F4BE00D7EE04 /* GFViewController.swift in Sources */,
 				F908EC3820C6F4BE00D7EE04 /* AppDelegate.swift in Sources */,
+				BF3D576D20CA984300839F1D /* GFLoginCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,7 +386,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZJ3NS3BVG6;
 				INFOPLIST_FILE = iWork/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.razz.iWork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -400,7 +405,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZJ3NS3BVG6;
 				INFOPLIST_FILE = iWork/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.razz.iWork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
