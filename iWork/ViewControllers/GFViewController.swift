@@ -13,6 +13,7 @@ class GFViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        (UIApplication.shared.delegate as! AppDelegate).loginCoordinator?.start()
     }
 
     override func didReceiveMemoryWarning() {

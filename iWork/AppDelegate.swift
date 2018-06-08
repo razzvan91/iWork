@@ -14,9 +14,10 @@ import ILLoginKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var loginCoordinator: LoginCoordinator?
 
     func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        LoginCoordinator(window: window!).start()
+        loginCoordinator = LoginCoordinator(window: window!)
         return true
     }
 
