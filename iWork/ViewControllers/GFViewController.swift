@@ -10,17 +10,26 @@ import UIKit
 
 class GFViewController: UIViewController {
 
+    var loginCoordinator: GFLoginCoordinator?
+
     override func viewDidLoad() {
+        if Auth.auth().currentUser == nil {
+            loginCoordinator = GFLoginCoordinator(rootViewController: self)
+        }
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        (UIApplication.shared.delegate as! AppDelegate).loginCoordinator?.start()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewWillAppear(_ animated: Bool) {
+        if Auth.auth().currentUser != nil {
+            loginCoordinator = nil
+        }
+        super.viewWillAppear(animated)
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        loginCoordinator?.start()
+        super.viewDidAppear(animated)
+    }
 
 }
 
