@@ -85,7 +85,6 @@
 		F908EC2B20C6F4BE00D7EE04 = {
 			isa = PBXGroup;
 			children = (
-				26E8BC1C20D10949001A4226 /* Xibs */,
 				F908EC3620C6F4BE00D7EE04 /* iWork */,
 				F908EC3520C6F4BE00D7EE04 /* Products */,
 				CEE0A175277218E8E80886FB /* Pods */,
@@ -104,6 +103,7 @@
 		F908EC3620C6F4BE00D7EE04 /* iWork */ = {
 			isa = PBXGroup;
 			children = (
+				26E8BC1C20D10949001A4226 /* Xibs */,
 				BF3D576B20CA97F700839F1D /* Controllers */,
 				F908EC3720C6F4BE00D7EE04 /* AppDelegate.swift */,
 				F908EC4920C6F4EC00D7EE04 /* ViewControllers */,
