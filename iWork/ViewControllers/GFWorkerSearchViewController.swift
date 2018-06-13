@@ -19,6 +19,8 @@ class GFWorkerSearchViewController: UIViewController, UITableViewDataSource, UIT
         self.tableView.delegate = self
         self.tableView.dataSource = self
         tableView.register(UINib(nibName: "GFWorkerCellTableViewCell", bundle: nil), forCellReuseIdentifier: "workerCell")
+        tableView.estimatedRowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 60
         
     }
 
@@ -44,9 +46,6 @@ class GFWorkerSearchViewController: UIViewController, UITableViewDataSource, UIT
         return cell;
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 70;
-    }
 
 
 }
