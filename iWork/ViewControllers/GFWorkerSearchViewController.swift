@@ -26,7 +26,7 @@ class GFWorkerSearchViewController: UIViewController, UITableViewDataSource, UIT
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    @IBAction func bk(_ sender: Any) {
+    @IBAction func cancelButtonPressed(_ sender: Any) {
         self.dismiss(animated: true) {
             print("Dismissed")
         }

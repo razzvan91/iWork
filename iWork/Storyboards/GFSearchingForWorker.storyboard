@@ -39,7 +39,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Cancel"/>
                                 <connections>
-                                    <action selector="bk:" destination="hoT-mn-DOE" eventType="touchUpInside" id="eZ8-H5-GzC"/>
+                                    <action selector="cancelButtonPressed:" destination="hoT-mn-DOE" eventType="touchUpInside" id="eZ8-H5-GzC"/>
                                 </connections>
                             </button>
                         </barButtonItem>
