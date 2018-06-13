@@ -10,6 +10,8 @@
 		000830E32FA45F5D03BB0658 /* Pods_iWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36944038317E32137953A715 /* Pods_iWork.framework */; };
 		26E8BC1F20D1097D001A4226 /* GFWorkerCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E8BC1D20D1097D001A4226 /* GFWorkerCellTableViewCell.swift */; };
 		26E8BC2020D1097D001A4226 /* GFWorkerCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26E8BC1E20D1097D001A4226 /* GFWorkerCellTableViewCell.xib */; };
+		26E8BC2220D11E3C001A4226 /* GFSearchingForWorker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26E8BC2120D11E3C001A4226 /* GFSearchingForWorker.storyboard */; };
+		26E8BC2420D12259001A4226 /* GFWorkerSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E8BC2320D12259001A4226 /* GFWorkerSearchViewController.swift */; };
 		BF3D576D20CA984300839F1D /* GFLoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D576C20CA984300839F1D /* GFLoginCoordinator.swift */; };
 		F908EC3820C6F4BE00D7EE04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F908EC3720C6F4BE00D7EE04 /* AppDelegate.swift */; };
 		F908EC3A20C6F4BE00D7EE04 /* GFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F908EC3920C6F4BE00D7EE04 /* GFViewController.swift */; };
@@ -23,6 +25,8 @@
 		117CC4758661500A45E20A40 /* Pods-iWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iWork.release.xcconfig"; path = "Pods/Target Support Files/Pods-iWork/Pods-iWork.release.xcconfig"; sourceTree = "<group>"; };
 		26E8BC1D20D1097D001A4226 /* GFWorkerCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFWorkerCellTableViewCell.swift; sourceTree = "<group>"; };
 		26E8BC1E20D1097D001A4226 /* GFWorkerCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GFWorkerCellTableViewCell.xib; sourceTree = "<group>"; };
+		26E8BC2120D11E3C001A4226 /* GFSearchingForWorker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GFSearchingForWorker.storyboard; sourceTree = "<group>"; };
+		26E8BC2320D12259001A4226 /* GFWorkerSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFWorkerSearchViewController.swift; sourceTree = "<group>"; };
 		36944038317E32137953A715 /* Pods_iWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6C5A4393508BD327D63CB42 /* Pods-iWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iWork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iWork/Pods-iWork.debug.xcconfig"; sourceTree = "<group>"; };
 		BF3D576C20CA984300839F1D /* GFLoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFLoginCoordinator.swift; sourceTree = "<group>"; };
@@ -119,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				F908EC3920C6F4BE00D7EE04 /* GFViewController.swift */,
+				26E8BC2320D12259001A4226 /* GFWorkerSearchViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -128,6 +133,7 @@
 			children = (
 				F908EC4020C6F4C200D7EE04 /* GFLaunchScreen.storyboard */,
 				F908EC3B20C6F4BE00D7EE04 /* GFMain.storyboard */,
+				26E8BC2120D11E3C001A4226 /* GFSearchingForWorker.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -196,6 +202,7 @@
 			files = (
 				F908EC4220C6F4C200D7EE04 /* GFLaunchScreen.storyboard in Resources */,
 				26E8BC2020D1097D001A4226 /* GFWorkerCellTableViewCell.xib in Resources */,
+				26E8BC2220D11E3C001A4226 /* GFSearchingForWorker.storyboard in Resources */,
 				F908EC4C20C6F72200D7EE04 /* GoogleService-Info.plist in Resources */,
 				F908EC3F20C6F4C200D7EE04 /* Assets.xcassets in Resources */,
 				F908EC3D20C6F4BE00D7EE04 /* GFMain.storyboard in Resources */,
@@ -281,6 +288,7 @@
 				F908EC3A20C6F4BE00D7EE04 /* GFViewController.swift in Sources */,
 				F908EC3820C6F4BE00D7EE04 /* AppDelegate.swift in Sources */,
 				BF3D576D20CA984300839F1D /* GFLoginCoordinator.swift in Sources */,
+				26E8BC2420D12259001A4226 /* GFWorkerSearchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
