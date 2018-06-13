@@ -108,6 +108,7 @@
                 <outlet property="avatarImage" destination="qhq-QP-BNF" id="f0R-9r-zgH"/>
                 <outlet property="experienceLabel" destination="GYo-dS-Pr7" id="RUO-Pz-5KF"/>
                 <outlet property="hourlyRateLabel" destination="Xkg-b9-bvW" id="5kZ-F3-SCU"/>
+                <outlet property="nameLabel" destination="Wu2-uR-ffS" id="NlQ-uk-efy"/>
                 <outlet property="professionLabel" destination="1mi-NS-KBc" id="3of-wS-5AQ"/>
                 <outlet property="ratingImage" destination="799-69-cF6" id="6Zf-pG-BAB"/>
             </connections>

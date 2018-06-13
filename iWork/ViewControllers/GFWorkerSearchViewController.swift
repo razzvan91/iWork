@@ -39,8 +39,8 @@ class GFWorkerSearchViewController: UIViewController, UITableViewDataSource, UIT
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        let cell = tableView.dequeueReusableCell(withIdentifier: "workerCell", for: indexPath)
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "workerCell", for: indexPath) as! GFWorkerCellTableViewCell
+        cell.nameLabel.text = "Test!"
         return cell;
     }
     
