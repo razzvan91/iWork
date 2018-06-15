@@ -60,7 +60,6 @@
 			isa = PBXGroup;
 			children = (
 				F908EC3E20C6F4C200D7EE04 /* Assets.xcassets */,
-				F908EC4320C6F4C200D7EE04 /* Info.plist */,
 				F908EC4B20C6F72200D7EE04 /* GoogleService-Info.plist */,
 			);
 			path = SupportFiles;
@@ -129,6 +128,7 @@
 		F908EC3620C6F4BE00D7EE04 /* iWork */ = {
 			isa = PBXGroup;
 			children = (
+				F908EC4320C6F4C200D7EE04 /* Info.plist */,
 				F908EC3720C6F4BE00D7EE04 /* AppDelegate.swift */,
 				26E8BC1C20D10949001A4226 /* Xibs */,
 				F908EC4920C6F4EC00D7EE04 /* ViewControllers */,
