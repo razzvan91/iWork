@@ -10,8 +10,11 @@
 import UIKit
 
 class GFWorkerSearchViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
+    //for testitng - set property to 0
+    var testing : Bool = false
+    
     @IBOutlet weak var tableView: UITableView!
+    var dataBase: GFDatabaseManager = GFDatabaseManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,12 +25,13 @@ class GFWorkerSearchViewController: UIViewController, UITableViewDataSource, UIT
         tableView.estimatedRowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 60
         
+        //for testing
+        if testing{
+            dataBase.getData(fromCollection: "users", andDocument: "pH4VhaeL3HWVY1zhlufQ")
+        }
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     @IBAction func cancelButtonPressed(_ sender: Any) {
         self.dismiss(animated: true) {
             print("Dismissed")
@@ -40,12 +44,12 @@ class GFWorkerSearchViewController: UIViewController, UITableViewDataSource, UIT
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "workerCell", for: indexPath) as! GFWorkerCellTableViewCell
         cell.nameLabel.text = "Test!"
         return cell;
     }
     
-
-
+    
+    
 }

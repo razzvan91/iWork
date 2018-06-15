@@ -9,7 +9,8 @@
 import UIKit
 
 class GFWorkerCellTableViewCell: UITableViewCell {
-
+    
+    
     @IBOutlet weak var nameLabel : UILabel!
     @IBOutlet weak var professionLabel: UILabel!
     @IBOutlet weak var hourlyRateLabel: UILabel!
@@ -22,11 +23,21 @@ class GFWorkerCellTableViewCell: UITableViewCell {
         super.awakeFromNib()
         
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
     
+    func setCellData(withModel model:GFWorkerDataModel){
+        
+        nameLabel.text = model.name
+        professionLabel.text = model.profession
+        hourlyRateLabel.text = model.hourlyRate
+        experienceLabel.text = String(model.experience)
+        
+        avatarImage.image = model.avatar
+        ratingImage.image = model.rating
+    }
 }
