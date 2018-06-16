@@ -10,11 +10,11 @@ import UIKit
 
 class GFWorkerDataModel: NSObject {
     
-    let name : String = String()
-    let profession : String = String()
-    let hourlyRate : String = String()
-    let experience : Int = Int()
-    let avatar : UIImage? = nil
-    let rating : UIImage? = nil
+    var name : String = String()
+    var profession : String = String()
+    var hourlyRate : Int = Int()
+    var experience : Int = Int()
+    var avatar : UIImage? = nil
+    var rating : UIImage? = nil
     
 }

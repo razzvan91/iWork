@@ -11,7 +11,8 @@ import UIKit
 
 class GFWorkerSearchViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     //for testitng - set property to 0
-    var testing : Bool = false
+    var testing : Bool = true
+    let modelTest = GFWorkerDataModel()
     
     @IBOutlet weak var tableView: UITableView!
     var dataBase: GFDatabaseManager = GFDatabaseManager()
@@ -28,6 +29,10 @@ class GFWorkerSearchViewController: UIViewController, UITableViewDataSource, UIT
         //for testing
         if testing{
             dataBase.getData(fromCollection: "users", andDocument: "pH4VhaeL3HWVY1zhlufQ")
+            
+            modelTest.name = "Gicu"
+            modelTest.experience = 5
+            modelTest.hourlyRate = 5
         }
         
     }
@@ -46,7 +51,7 @@ class GFWorkerSearchViewController: UIViewController, UITableViewDataSource, UIT
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "workerCell", for: indexPath) as! GFWorkerCellTableViewCell
-        cell.nameLabel.text = "Test!"
+        cell.setCellData(withModel: modelTest)
         return cell;
     }
     

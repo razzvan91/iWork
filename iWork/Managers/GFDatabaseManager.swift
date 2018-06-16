@@ -18,7 +18,9 @@ class GFDatabaseManager: NSObject {
         super.init()
         db = Firestore.firestore()
     }
+  
     
+    //MARK: fetching the data
     func getData(fromCollection collection: String, andDocument document: String){
         let docRef = db.collection(collection).document(document)
         docRef.getDocument { (document, error) in

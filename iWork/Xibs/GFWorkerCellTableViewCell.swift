@@ -34,7 +34,7 @@ class GFWorkerCellTableViewCell: UITableViewCell {
         
         nameLabel.text = model.name
         professionLabel.text = model.profession
-        hourlyRateLabel.text = model.hourlyRate
+        hourlyRateLabel.text = String(model.hourlyRate)
         experienceLabel.text = String(model.experience)
         
         avatarImage.image = model.avatar
