@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		000830E32FA45F5D03BB0658 /* Pods_iWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36944038317E32137953A715 /* Pods_iWork.framework */; };
-		2694791220D3ADB600E3CC0D /* GFDatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2694791120D3ADB600E3CC0D /* GFDatabaseManager.swift */; };
+		2694791220D3ADB600E3CC0D /* ".swift in Sources */ = {isa = PBXBuildFile; fileRef = 2694791120D3ADB600E3CC0D /* ".swift */; };
 		2694791520D3D5C900E3CC0D /* GFWorkerDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2694791420D3D5C900E3CC0D /* GFWorkerDataModel.swift */; };
 		26E8BC1F20D1097D001A4226 /* GFWorkerCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E8BC1D20D1097D001A4226 /* GFWorkerCellTableViewCell.swift */; };
 		26E8BC2020D1097D001A4226 /* GFWorkerCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26E8BC1E20D1097D001A4226 /* GFWorkerCellTableViewCell.xib */; };
@@ -25,7 +25,7 @@
 
 /* Begin PBXFileReference section */
 		117CC4758661500A45E20A40 /* Pods-iWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iWork.release.xcconfig"; path = "Pods/Target Support Files/Pods-iWork/Pods-iWork.release.xcconfig"; sourceTree = "<group>"; };
-		2694791120D3ADB600E3CC0D /* GFDatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFDatabaseManager.swift; sourceTree = "<group>"; };
+		2694791120D3ADB600E3CC0D /* ".swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "\".swift"; sourceTree = "<group>"; };
 		2694791420D3D5C900E3CC0D /* GFWorkerDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFWorkerDataModel.swift; sourceTree = "<group>"; };
 		26E8BC1D20D1097D001A4226 /* GFWorkerCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFWorkerCellTableViewCell.swift; sourceTree = "<group>"; };
 		26E8BC1E20D1097D001A4226 /* GFWorkerCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GFWorkerCellTableViewCell.xib; sourceTree = "<group>"; };
@@ -68,7 +68,7 @@
 		2694791320D3ADBC00E3CC0D /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				2694791120D3ADB600E3CC0D /* GFDatabaseManager.swift */,
+				2694791120D3ADB600E3CC0D /* ".swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -324,7 +324,7 @@
 				F908EC3A20C6F4BE00D7EE04 /* GFViewController.swift in Sources */,
 				2694791520D3D5C900E3CC0D /* GFWorkerDataModel.swift in Sources */,
 				F908EC3820C6F4BE00D7EE04 /* AppDelegate.swift in Sources */,
-				2694791220D3ADB600E3CC0D /* GFDatabaseManager.swift in Sources */,
+				2694791220D3ADB600E3CC0D /* ".swift in Sources */,
 				BF3D576D20CA984300839F1D /* GFLoginCoordinator.swift in Sources */,
 				26E8BC2420D12259001A4226 /* GFWorkerSearchViewController.swift in Sources */,
 			);
