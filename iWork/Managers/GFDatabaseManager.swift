@@ -21,7 +21,7 @@ class GFDatabaseManager: NSObject {
   
     
     //MARK: fetching the data
-    func getData(fromCollection collection: String, andDocument document: String){
+    func getData(fromCollection collection: String, andDocument document: String, completionBlock: @escaping (_ worker: GFWorkerDataModel) -> Void){
         let docRef = db.collection(collection).document(document)
         docRef.getDocument { (document, error) in
             if (error != nil) {
@@ -32,6 +32,11 @@ class GFDatabaseManager: NSObject {
                     print("Document data: \(dataDescription)")
                     let a = document.get("profession") as! String
                     print(a.count)
+                    
+                    let worker = GFWorkerDataModel()
+                    worker.name = document.get("name") as! String
+                    //TODO: Introduce 
+                    completionBlock(worker)
                 }
             }
         }

@@ -27,13 +27,13 @@ class GFWorkerSearchViewController: UIViewController, UITableViewDataSource, UIT
         tableView.estimatedRowHeight = 60
         
         //for testing
-        if testing{
-            dataBase.getData(fromCollection: "users", andDocument: "pH4VhaeL3HWVY1zhlufQ")
-            
-            modelTest.name = "Gicu"
-            modelTest.experience = 5
-            modelTest.hourlyRate = 5
-        }
+//        if testing{
+//            dataBase.getData(fromCollection: "users", andDocument: "pH4VhaeL3HWVY1zhlufQ", completionBlock: )
+//            
+//            modelTest.name = "Gicu"
+//            modelTest.experience = 5
+//            modelTest.hourlyRate = 5
+//        }
         
     }
 
