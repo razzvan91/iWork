@@ -16,6 +16,7 @@ class GFWorkerSearchViewController: UIViewController, UITableViewDataSource, UIT
     
     @IBOutlet weak var tableView: UITableView!
     var dataBase: GFDatabaseManager = GFDatabaseManager()
+    var workersArray = [GFWorkerDataModel]();
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,14 +28,17 @@ class GFWorkerSearchViewController: UIViewController, UITableViewDataSource, UIT
         tableView.estimatedRowHeight = 60
         
         //for testing
-//        if testing{
-//            dataBase.getData(fromCollection: "users", andDocument: "pH4VhaeL3HWVY1zhlufQ", completionBlock: )
-//            
-//            modelTest.name = "Gicu"
-//            modelTest.experience = 5
-//            modelTest.hourlyRate = 5
-//        }
-        
+        if testing {
+            dataBase.getData(fromCollection: "users", andDocument: "pH4VhaeL3HWVY1zhlufQ") {
+                worker in
+                self.workersArray.append(worker)
+                DispatchQueue.main.async {
+                    // Run UI Updates or call completion block
+                    self.tableView.reloadData()
+                }
+            }
+        }
+
     }
 
     @IBAction func cancelButtonPressed(_ sender: Any) {
@@ -43,15 +47,18 @@ class GFWorkerSearchViewController: UIViewController, UITableViewDataSource, UIT
         }
     }
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2;
+        return workersArray.count;
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "workerCell", for: indexPath) as! GFWorkerCellTableViewCell
-        cell.setCellData(withModel: modelTest)
+        cell.setCellData(withModel: workersArray[indexPath.row])
         return cell;
     }
     
