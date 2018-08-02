@@ -30,7 +30,7 @@ class GFDatabaseManager: NSObject {
                 if let document = document, document.exists {
                     let worker = GFWorkerDataModel()
                     worker.name = document.get("profession") as! String
-                    //TODO: Introduce
+                    //TODO: Introduce 
                     completionBlock(worker)
                 }
             }

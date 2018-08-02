@@ -13,6 +13,7 @@ class GFWorkerSearchViewController: UIViewController, UITableViewDataSource, UIT
     //for testitng - set property to 0
     var testing : Bool = true
     let modelTest = GFWorkerDataModel()
+    var workers = [GFWorkerDataModel]()
     
     @IBOutlet weak var tableView: UITableView!
     var dataBase: GFDatabaseManager = GFDatabaseManager()
