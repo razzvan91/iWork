@@ -1,5 +1,5 @@
 //
-//  GFViewController.swift
+//  GFLoginViewController.swift
 //  iWork
 //
 //  Created by Razvan Armeanu on 05/06/2018.
@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class GFViewController: UIViewController {
+class GFLoginViewController: UIViewController {
 
     var loginCoordinator: GFLoginCoordinator?
 

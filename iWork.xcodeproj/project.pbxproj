@@ -16,7 +16,7 @@
 		26E8BC2420D12259001A4226 /* GFWorkerSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E8BC2320D12259001A4226 /* GFWorkerSearchViewController.swift */; };
 		BF3D576D20CA984300839F1D /* GFLoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D576C20CA984300839F1D /* GFLoginCoordinator.swift */; };
 		F908EC3820C6F4BE00D7EE04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F908EC3720C6F4BE00D7EE04 /* AppDelegate.swift */; };
-		F908EC3A20C6F4BE00D7EE04 /* GFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F908EC3920C6F4BE00D7EE04 /* GFViewController.swift */; };
+		F908EC3A20C6F4BE00D7EE04 /* GFLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F908EC3920C6F4BE00D7EE04 /* GFLoginViewController.swift */; };
 		F908EC3D20C6F4BE00D7EE04 /* GFMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F908EC3B20C6F4BE00D7EE04 /* GFMain.storyboard */; };
 		F908EC3F20C6F4C200D7EE04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F908EC3E20C6F4C200D7EE04 /* Assets.xcassets */; };
 		F908EC4220C6F4C200D7EE04 /* GFLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F908EC4020C6F4C200D7EE04 /* GFLaunchScreen.storyboard */; };
@@ -36,7 +36,7 @@
 		BF3D576C20CA984300839F1D /* GFLoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFLoginCoordinator.swift; sourceTree = "<group>"; };
 		F908EC3420C6F4BE00D7EE04 /* iWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F908EC3720C6F4BE00D7EE04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F908EC3920C6F4BE00D7EE04 /* GFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFViewController.swift; sourceTree = "<group>"; };
+		F908EC3920C6F4BE00D7EE04 /* GFLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFLoginViewController.swift; sourceTree = "<group>"; };
 		F908EC3C20C6F4BE00D7EE04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/GFMain.storyboard; sourceTree = "<group>"; };
 		F908EC3E20C6F4C200D7EE04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F908EC4120C6F4C200D7EE04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/GFLaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -144,7 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				BF3D576C20CA984300839F1D /* GFLoginCoordinator.swift */,
-				F908EC3920C6F4BE00D7EE04 /* GFViewController.swift */,
+				F908EC3920C6F4BE00D7EE04 /* GFLoginViewController.swift */,
 				26E8BC2320D12259001A4226 /* GFWorkerSearchViewController.swift */,
 			);
 			path = ViewControllers;
@@ -321,7 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26E8BC1F20D1097D001A4226 /* GFWorkerCellTableViewCell.swift in Sources */,
-				F908EC3A20C6F4BE00D7EE04 /* GFViewController.swift in Sources */,
+				F908EC3A20C6F4BE00D7EE04 /* GFLoginViewController.swift in Sources */,
 				2694791520D3D5C900E3CC0D /* GFWorkerDataModel.swift in Sources */,
 				F908EC3820C6F4BE00D7EE04 /* AppDelegate.swift in Sources */,
 				2694791220D3ADB600E3CC0D /* GFDatabaseManager.swift in Sources */,
