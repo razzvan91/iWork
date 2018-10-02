@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class GFRegisterWorkerViewController: UIViewController {
 
@@ -30,6 +31,24 @@ class GFRegisterWorkerViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func submitButtonPressed(_ sender: Any) {
+        let wh = Firestore.firestore().collection("workingHours")
+        Firestore.firestore().collection("users").addDocument(data: [
+            "averageCost": Int(averageCostTextField.text!)!,
+            "experiece": Int(experienceTextField.text!)!,
+            "isEmergency": availableForEmergencyTextField.text == "true",
+            "profession": professionTextField.text!,
+            "responseTime": Int(responseTimeTextField.text!)!,
+            "userID": Auth.auth().currentUser!.uid,
+            "workingHours": wh
+        ]) { (error) in
+            guard nil == error else {
+                print(error!.localizedDescription)
+                return
+            }
+            print("user added")
+        }
+    }
+    
 
 }

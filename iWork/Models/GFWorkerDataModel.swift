@@ -17,4 +17,6 @@ class GFWorkerDataModel: NSObject {
     var avatar : UIImage? = nil
     var rating : UIImage? = nil
     
+    //Aici fac feciu' si mapez la proprietati
+    
 }
