@@ -8,6 +8,7 @@ target 'iWork' do
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
   pod 'Firebase/Auth'
+  pod 'FirebaseUI'
   pod 'ILLoginKit'
   pod 'Validator', :git => 'https://github.com/adamwaite/Validator'
 
