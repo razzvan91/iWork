@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import FirebaseUI
+//import FirebaseUI
 
 class GFSettingsViewController: UIViewController {
 

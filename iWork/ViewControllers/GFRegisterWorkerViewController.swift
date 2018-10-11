@@ -32,7 +32,11 @@ class GFRegisterWorkerViewController: UIViewController {
     }
     
     @IBAction func submitButtonPressed(_ sender: Any) {
-        let wh = Firestore.firestore().collection("workingHours")
+        let wh = Firestore.firestore().collection("workingHours").addDocument(data: [
+            "hours": workingHoursTextField.text!
+            ]
+        )
+        
         Firestore.firestore().collection("users").addDocument(data: [
             "averageCost": Int(averageCostTextField.text!)!,
             "experiece": Int(experienceTextField.text!)!,
